@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 500px;
+            width: 1000px;
+            border: 5px solid green;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+        .sub1{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            clip-path: circle(50% at 50% 50%);
+            background-position: center;
+            background-size: contain;
+        }
+        .sub2{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            clip-path: polygon(52% 14%, 95% 14%, 98% 18%, 98% 86%, 95% 90%, 7% 90%, 2% 87%, 2% 17%, 6% 14%);
+            background-position: center;
+            background-size: contain;
+        }
+        .sub3{
+            height: 140px;
+            width: 300px;
+            border-radius: 50%;
+            clip-path: polygon(20% 0%, 100% 0, 100% 20%, 100% 100%, 20% 100%, 0 100%, 0 0);
+            background-position: center;
+            background-size: contain;
+        }
+    </style>
+</head>
+<body>
+    <h1>create some shape using canvas tah in html</h1>
+    <div class="box">
+        <div class="main">
+            <div class="sub2">
+                <img src="img2.jpg" height="200px" width="200px" alt="">
+            </div>
+            <div class="sub1">
+                <img src="img1.jpg" height="200px" width="200px" alt="">
+            </div>
+            <div class="sub3">
+                <img src="img3.jpeg" alt="" height="140px" width="300px">
+            </div>
+        </div>
+    
+    </div>    
+</body>
+</html>
