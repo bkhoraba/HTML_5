@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+        }
+        h1{
+            color: white;
+            padding: 20px;
+        }
+        .main{
+            display: inline-grid;
+            grid-template-columns: 110px 110px 110px 110px 110px 110px;
+            grid-template-rows: 110px 110px 110px 110px 110px 110px;
+            padding: 10px;
+        }
+        .main > div{
+            padding: 10px;
+            /* background-color: aqua;
+            border: 2px solid black; */
+        }
+        .sub1{
+            height: 200px;
+            width: 200px;
+            grid-column-start: 2;
+            grid-row-start: 1;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            background-image: url(./images/img1.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .sub2{
+            height: 200px;
+            width: 200px;
+            grid-column-start: 4;
+            grid-row-start: 1;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            background-image: url(./images/img2.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .sub3{
+            height: 200px;
+            grid-column-start: 6;
+            width: 200px;
+            grid-row-start: 1;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            background-image: url(./images/img3.avif);
+            background-position: center;
+            background-size: cover;
+        }
+        .sub4{
+            height: 200px;
+            width: 200px;
+            grid-column-start: 1;
+            grid-row-start: 2;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            background-image: url(./images/img4.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .sub5{
+            height: 200px;
+            width: 200px;
+            grid-column-start: 3;
+            grid-row-start: 2;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            background-image: url(./images/img5.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .sub6{
+            height: 200px;
+            width: 200px;
+            grid-column-start: 5;
+            grid-row-start: 2;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            background-image: url(./images/img6.jpeg);
+            background-position: center;
+            background-size: cover;
+        }
+        .sub7{
+            height: 200px;
+            width: 200px;
+            grid-column-start: 7;
+            grid-row-start: 2;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            background-image: url(./images/img7.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .sub8{
+            height: 200px;
+            width: 200px;
+            grid-column-start: 2;
+            grid-row-start: 3;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            background-image: url(./images/img8.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .sub9{
+            height: 200px;
+            width: 200px;
+            grid-column-start: 4;
+            grid-row-start: 3;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            background-image: url(./images/img9.webp);
+            background-position: center;
+            background-size: cover;
+        }
+        .sub10{
+            height: 200px;
+            width: 200px;
+            grid-column-start: 6;
+            grid-row-start: 3;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            background-image: url(./images/img10.avif);
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <h1>Write a program to create this layout using apply effects.</h1>
+    <div class="main">
+        <div class="box1"></div>
+        <div class="sub1"></div>
+        <div class="sub2"></div>
+        <div class="sub3"></div>
+        <div class="sub4"></div>
+        <div class="sub5"></div>
+        <div class="sub6"></div>
+        <div class="sub7"></div>
+        <div class="sub8"></div>
+        <div class="sub9"></div>
+        <div class="sub10"></div>
+        <div class="sub11"></div>
+        <div class="sub12"></div>
+        <div class="sub13"></div>
+        <div class="sub14"></div>
+        <div class="sub15"></div>
+        <div class="sub16"></div>
+        <div class="sub17"></div>
+    </div>
+    
+</body>
+</html>
