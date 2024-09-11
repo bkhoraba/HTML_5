@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    height: 600px;
+    width: auto;
+    background-image: linear-gradient(orange, yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.sub1{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: yellow;
+}
+.sub2{
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+    background-color: orange;
+    position: absolute;
+    left: 39.2%;
+    top: 25.5%;
+}

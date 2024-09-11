@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.btn1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+#btn2{
+    padding: 5px 50px;
+    background-color: #F2F9EB;
+    border: none;
+    border-radius: 20px;
+    
+}
+.btn3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#btn4{
+    padding: 5px 20px;
+    background: #81C43B;
+    border: none;
+    border-radius: 20px;
+}
+
+
+.top-btns{
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.get-btn{
+    height: 35px;
+    width: 150px;
+    background-color:#ECE5FF;
+    color: #794CFF;
+    border: none;
+    border-radius: 7px;
+}
+
+#login{
+    text-decoration: none;
+    color: #35414B;
+    ;
+}
+.offer-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.main-asset-content{
+    height: auto;
+    width: auto;
+    background-color:#F0EBFA ;
+    
+}
+
+.survay{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    text-align: start;
+    flex-direction: column;
+    border-left: 6px solid #794CFF;
+    background-color: #F0EBFA;
+}
+.main-work{
+    height: auto;
+    width: auto;
+    background-color:#FBFAFE;
+}
+.btn5{
+    padding: 5px 20px;
+    background-color:#796EFF;
+    border: none;
+    border-radius: 7px;
+    margin-top: 5px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+.make{
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+.lable1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.lable{
+    height: 200px;
+    width: 850px;
+    background: #796EFF;
+    border-radius: 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color:#1D2830;
+    color: white;
+}
+.inline1{
+    display: flex;
+    flex-direction: column;
+}
+.footer2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1px;
+    background-color: #1D2830;
+    padding: 10px;
+    color: white;
+}
+@media (min-width: 365px) and (max-width: 600px){
+    .assets{
+        flex-direction: column;
+    }
+    .team-survays{
+        flex-direction: column;
+    }
+    .lable1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .lable{
+        height: 200px;
+        width: 850px;
+        background: #796EFF;
+        border-radius: 20px;
+        margin: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column ;
+    }
+    .footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-color:#1D2830;
+        color: white;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .inline1{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .footer2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1px;
+        background-color: #1D2830;
+        padding: 10px;
+        color: white;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+}

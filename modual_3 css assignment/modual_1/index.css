@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+}
+.main>div{
+    height: 500px;
+    width: 400px;
+    background-color: aqua;
+    padding: 20px;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.pera{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+.box button{
+    padding: 5px 20px;
+    border: 1px solid gray;
+}
+.box1{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1 button{
+    padding: 5px 165px;
+    border: 1px solid gray;
+}
