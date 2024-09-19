@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.date-time {
+  padding: 10px 20px;
+  border: 2px solid #000;
+  background-color: #eee;
+}
+
+.time {
+  padding: 10px 20px;
+  border: 2px solid #000;
+  background-color: #333;
+  color: #fff;
+  font-size: 36px;
+}
+
+.time span {
+  display: inline-block;
+  margin: 0 5px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="date-time" id="date"></div>
+  <div class="time" id="time"></div>
+</div>
+
+<script>
+function updateTime() {
+  const now = new Date();
+  const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+  const timeOptions = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true };
+  
+  document.getElementById('date').textContent = now.toLocaleDateString('en-US', dateOptions);
+  document.getElementById('time').textContent = now.toLocaleTimeString('en-US', timeOptions);
+}
+
+updateTime(); // Set initial time
+setInterval(updateTime, 1000); // Update every second
+</script>
+</body>
+</html>
