@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .main {
+        width: auto;
+        height: 100vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .sub {
+        height: 250px;
+        width: 100px;
+        cursor: pointer;
+        border: 2px solid white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="sub" style="background-color: tomato"></div>
+      <div class="sub" style="background-color: aqua"></div>
+      <div class="sub" style="background-color: rgb(30, 203, 30)"></div>
+      <div class="sub" style="background-color: black"></div>
+      <div class="sub" style="background-color: pink"></div>
+      <div class="sub" style="background-color: brown"></div>
+    </div>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <script>
+    $(document).ready(function () {
+      $(".sub").click(function () {
+        $("body").css("background-color", this.style["background-color"]);
+      });
+    });
+  </script>
+</html>

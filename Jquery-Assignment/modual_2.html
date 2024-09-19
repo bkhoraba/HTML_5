@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(1, 1, 23);
+        }
+        .main{
+            height: 500px;
+            background-color: yellow;
+            border-radius: 0 0 50px 50px;
+        }
+        .sub{
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+        }
+        .btn1{
+            padding: 10px 40px;
+            border-radius: 20px;
+            border: none;
+            background-color: yellow;
+        }
+        .btn2{
+            padding: 10px 40px;
+            border-radius: 20px;
+            border: none;
+            background-color: yellow;
+        }
+        .btn3{
+            padding: 10px 40px;
+            border-radius: 20px;
+            border: none;
+            background-color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <div class="sub">
+            <h1>Slide Toggle / SlideUp / SlideDown</h1>
+            <span>Pure JavaScript</span>
+        </div>
+    </div>
+    <div class="btn">
+        <button class="btn1">SlideUp</button>
+        <button class="btn2"> SlideDown</button>
+        <button class="btn3">Slide Toggle</button>
+    </div>
+    
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    $(document).ready(function(){
+        $(".btn1").click(function(){
+            $(".main").slideUp(2000)
+        })
+    })
+
+    $(document).ready(function(){
+        $(".btn2").click(function(){
+            $(".main").slideDown(2000)
+        })
+    })
+
+    $(document).ready(function(){
+        $(".btn3").click(function(){
+            $(".main").slideToggle(2000)
+        })
+    })
+</script>
+
+</html>
